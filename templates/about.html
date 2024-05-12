@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About the Project</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>About This Project</h1>
+    <p>This project utilizes machine learning to detect and analyze cyberbullying and sentiment within textual content. Below is an outline of how it works:</p>
+    
+    <h2>Features</h2>
+    <ul>
+        <li><strong>Cyberbullying Detection:</strong> Uses a pre-trained machine learning model to classify text as cyberbullying or non-cyberbullying.</li>
+        <li><strong>Sentiment Analysis:</strong> Analyzes the sentiment of the text to determine if the content is positive, neutral, or negative.</li>
+        <li><strong>Latest News:</strong> Provides updates and news on cyber crimes, helping users stay informed about recent developments.</li>
+    </ul>
+
+    <h2>Technology Stack</h2>
+    <p>The application is built using Flask, a Python web framework, with machine learning models implemented using libraries such as scikit-learn and nltk for natural language processing.</p>
+
+    <!-- Download Button for the Dataset -->
+    <div>
+        <h2>Dataset</h2>
+        <p>You can download the dataset used in this project:</p>
+        <a href="https://drive.google.com/file/d/1b74BeAGqcm9coDpGNIyE4aiarUF8Jz3m/view?usp=sharing" class="btn btn-primary">Download Dataset</a>
+    </div>
+
+    <a href="{{ url_for('index') }}" class="btn btn-primary">Back to Home</a>
+</div>
+</body>
+</html>

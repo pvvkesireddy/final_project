@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cyber Crime News</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Cyber Crime News</h1>
+    <ul class="list-unstyled">
+        {% for article in articles %}
+            <li class="media my-4">
+                <img src="{{ article.urlToImage }}" class="mr-3" alt="Article Image" style="width: 64px; height: 64px;">
+                <div class="media-body">
+                    <h5 class="mt-0 mb-1"><a href="{{ article.url }}">{{ article.title }}</a></h5>
+                    {{ article.description }}
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="{{ url_for('index') }}" class="btn btn-primary">Back to Home</a>
+</div>
+</body>
+</html>
